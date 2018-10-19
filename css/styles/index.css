@@ -1,0 +1,271 @@
+@font-face {
+    font-family: fuente;
+    src: url(../../fonts/fonts/KoHo/KoHo-Regular.ttf);
+}
+
+* {
+    font-family: fuente;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0);
+}
+
+.separacion {
+    line-height: 1;
+}
+
+.bg-dark {
+    transition: background-color 0.2s linear;
+    opacity: 0.9;
+}
+
+.tam-logo {
+    width: 160px !important;
+    height: 160px !important;
+    transition: width 0.6s, height 0.6s;
+}
+
+.opacidad-imagen {
+    background-color: rgba(119, 119, 119, 0.2)
+}
+
+.opacidad-imagen-eventos {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.red-logo {
+    width: 100px !important;
+    height: 100px !important;
+    transition: width 0.6s, height 0.6s;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 220, 124);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(230, 72, 72);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sombra {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sombra-texto {
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contenedor {
+    background: url(../../images/encabezado.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 6%;
+    height: 100vh;
+}
+
+.menu {
+    background: url(../../images/menu2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 6%;
+}
+
+.contactanos {
+    overflow: hidden;
+    background: url(../../images/contactanos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 6%;
+    height: 50vh;
+}
+
+.footer {
+    background: url(../../images/footer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 6%;
+}
+
+.eventos {
+    overflow: hidden;
+    background: url(../../images/eventos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 60%;
+    height: 50vh;
+}
+
+.texto-small {
+    font-size: calc(3vw + 3vh + 2vmin);
+}
+
+.paddiing-0 {
+    padding: 0 !important;
+}
+
+.tam100vh {
+    height: 100vh !important;
+}
+
+.tam50vh {
+    height: 50vh !important;
+}
+
+.nav-font {
+    font-size: 28px;
+}
+
+.title-footer {
+    font-size: 5em;
+}
+
+.title-principal {
+    font-size: 9em;
+    color: rgb(255, 249, 242) !important;
+}
+
+
+/* mapa */
+
+div.mapa {
+    position: relative;
+    overflow: hidden;
+}
+
+div.mapa p {
+    max-width: 100%;
+    height: 400px;
+    z-index: 1;
+}
+
+
+/* div.mapa button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    margin-left: 100px;
+    margin-top: 12px;
+    width: 200px;
+} */
+
+.paddingNone {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.eslogan {
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+a:active {
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+.text-danger {
+    color: red !important;
+}
+
+hr {
+    width: 100px;
+}
+
+.nav-item {
+    color: red !important;
+}
+
+.tab-content img {
+    border-radius: 10px;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-backdrop {
+    background-color: rgba(139, 139, 139, 0.2);
+}
+
+
+/* Opacity #2 */
+
+#nav-tabContent figure {
+    background: rgba(255, 198, 75, 0.4);
+    border-radius: 10px;
+}
+
+#nav-tabContent figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#nav-tabContent figure:hover img {
+    opacity: .5;
+}
+
+#nav-tabContent figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#nav-tabContent figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+figure {
+    width: 500px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(250, 204, 0, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(250, 204, 0, 0.7);
+}
+
+.navbar-nav .active {
+    color: yellow !important;
+}

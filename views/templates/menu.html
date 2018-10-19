@@ -1,0 +1,125 @@
+<section class="" pb-5>
+    <div class="modal fade" id="imagen" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content sombra">
+                <!-- <div class="modal-header bg-dark">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-danger">&times;</span>
+                      </button>
+                </div> -->
+                <div class="modal-body">
+                    <img ng-src="{{menu.imagen}}" alt="" class="img-fluid sombra">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid menu paddiing-0 opacidad-imagen">
+        <div class="opacidad-imagen">
+            <div class="container ">
+                <div class="row justify-content-center align-items-center pt-5">
+                    <div class="col-sm-10 col-md-11 col-lg-9 separacion pt-5 mt-5">
+                        <!-- <p class="display-1 text-white text-center sombra-texto animated zoomIn texto-small"><strong>SAN COCHITO</strong></p> -->
+                        <p class="text-white text-center sombra-texto title-footer animated zoomIn texto-small mt-5 pt-5 pb-5 mb-5">NUESTRO MENÚ</p>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- <div class="col-12">
+                                <p class="text-white text-center display-4 animated flipInX text-danger sombra-texto"><strong>Tortas ahogadas</strong></p>
+            
+                            </div>
+                            <hr class="border border-warning bg-warning"> -->
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link sombra-texto active h3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <strong>TORTAS AHOGADAS</strong> </a>
+                                <a class="nav-item nav-link sombra-texto h3" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> <strong>TACOS</strong> </a>
+                                <a class="nav-item nav-link sombra-texto h3" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> <strong>MINI TORTAS</strong> </a>
+                                <a class="nav-item nav-link sombra-texto h3" id="nav-paquete-tab" data-toggle="tab" href="#nav-paquete" role="tab" aria-controls="nav-paquete" aria-selected="false"> <strong>PAQUETES</strong> </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <!------------------------------------------- Tortas ahogadas ----------------------------------->
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row pb-5 mt-5 justify-content-center">
+                                    <div class="col-12 col-lg-6">
+                                        <figure class="sombra">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/torta-carnitas.jpg" alt="" class="img-fluid sombra"></a>
+
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <p class="text-warning sombra-texto text-center h3"><strong>Ahogada de Carnitas</strong></p>
+                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-lg-block d-none mt-5">
+                                        <p class="text-warning sombra-texto text-center h3"><strong>Ahogada de Buche</strong></p>
+                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-5">
+                                        <figure class="sombra">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/torta-buche.jpg" alt="" class="img-fluid sombra"></a>
+
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 d-block d-lg-none">
+                                        <p class="text-warning sombra-texto mt-5 text-center h3"><strong>Ahogada de Buche</strong></p>
+                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-5">
+                                        <figure class="sombra">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/torta-lengua.jpg" alt="" class="img-fluid sombra"></a>
+
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-5">
+                                        <p class="text-warning sombra-texto text-center h3"><strong>Ahogada de Lengua</strong></p>
+                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------------------------------------- Tacos----------------------------------->
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row pb-5 mt-5">
+                                    <div class="col-6">
+                                        <figure class="sombra">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/taco-carne.jpg" alt="" class="img-fluid sombra"></a>
+
+                                        </figure>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-warning sombra-texto text-center h3"><strong>Taco Dorado</strong></p>
+                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        </p>
+                                    </div>
+                                    <div class="col-6 mt-5">
+                                        <p class="text-warning sombra-texto text-center h3"><strong>Taco con Carne</strong></p>
+                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        </p>
+                                    </div>
+                                    <div class="col-6 mt-5">
+                                        <figure class="sombra">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/taco-dorado.jpg" alt="" class="img-fluid sombra"></a>
+
+                                        </figure>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                            <div class="tab-pane fade" id="nav-paquete" role="tabpanel" aria-labelledby="nav-paquete-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

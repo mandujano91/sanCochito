@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sancochito">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toratas San Cochito</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+</head>
+
+<body ng-controller="scroll">
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark text-center" id="menu">
+        <a class="navbar-brand text-warning ml-2 mt-2" href="#/!">
+            <img src="images/logo.png" id="logo" class="d-inline-block align-top tam-logo" alt="">
+        </a>
+        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars fa-2x text-light"></i>
+            </button>
+        <div class="collapse navbar-collapse" id="navegacion">
+            <ul class="navbar-nav ml-auto mr-auto text-center">
+                <li class="nav-items nav-font">
+                    <a href="#/!" class="sombra-texto" ng-class="['nav-link',{'active':item === 1}]"><strong>INICIO</strong> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-items nav-font">
+                    <a href="#!menu" class="sombra-texto" ng-class="['nav-link',{'active':item === 2}]"><strong>MENÚ</strong> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-items nav-font">
+                    <a href="#/!" class="sombra-texto" ng-class="['nav-link',{'active':item === 3}]"><strong>NOSOTROS</strong> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-items nav-font">
+                    <a href="#/!" class="sombra-texto" ng-class="['nav-link',{'active':item === 4}]"><strong>SUCURSAL</strong> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-items nav-font">
+                    <a href="#/!" class="sombra-texto" ng-class="['nav-link',{'active':item === 5}]"><strong>EVENTOS</strong> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-items nav-font">
+                    <a href="#/!" class="sombra-texto" ng-class="['nav-link',{'active':item === 6}]"><strong>CONTACTO</strong> <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- ------------------- -->
+
+
+    <!-- Templates -->
+    <ng-view>
+
+    </ng-view>
+    <!-- Templates -->
+
+    <section class="">
+
+        <div class="container-fluid contactanos paddiing-0">
+            <div class="opacidad-imagen">
+                <div class="row justify-content-center align-items-center tam50vh">
+                    <div class="col-sm-10 col-md-11 col-lg-9">
+                        <p class="text-white text-center title-footer sombra-texto">¡HAZ TU PEDIDO!</p>
+                        <p class="text-light text-center h1 pb-2 ">Comunicate con nosotros al: </p>
+                        <p class="text-white text-center h3"><strong> <i class="fas fa-phone text-dark"></i> 33 21 25 36</strong></p>
+                        <p class="text-white text-center h3"><strong> <i class="fas fa-phone text-dark"></i> 33 21 25 36</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer paddiing-0">
+            <div class="opacidad-imagen">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-10 col-md-11 col-lg-9">
+                        <p class="text-white text-center  h3 pt-4 pb-3"><strong>Siguenos en: <a href="#"><i class="fab fa-facebook-square sombra-texto"></i></a> <a href="#"><i class="fab fa-twitter-square sombra-texto"></i></a> <a href="#"><i class="fab fa-instagram sombra-texto"></i></a></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="mapa col-md-12 col-sm-12 paddingnon">
+            <p id="map"></p>
+             <button class="btn p-2 obten text-white" onclick="window.open(
+                    'https://www.google.com/maps/dir//Calz.+del+Federalismo+Sur+566,+Americana,+44160+Guadalajara,+Jal./@20.6680843,-103.4254639,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8428b1fefdc26aab:0xfb0d5492b9a00e6f!2m2!1d-103.3554235!2d20.6680984',
+                    '_blank'
+                  );"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <strong>UBICACIÓN</strong> </button> 
+        </div> -->
+    </section>
+
+    <!-- Librerias -->
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/libs/angular-route.min.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/leaflet.js"></script>
+    <script src="js/scripts/map.js"></script>
+
+
+    <!-- -------- -->
+
+    <!-- Module -->
+    <script src="js/scripts/module.js"></script>
+    <!-- ------ -->
+    <!-- Controllers -->
+    <script src="js/scripts/scrollController.js"></script>
+    <script src="js/scripts/menuController.js"></script>
+    <!-- ----------- -->
+</body>
+
+
+</html>
