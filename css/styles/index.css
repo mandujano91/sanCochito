@@ -1,6 +1,6 @@
 @font-face {
     font-family: fuente;
-    src: url(../../fonts/fonts/KoHo/KoHo-Regular.ttf);
+    src: url(../../fonts/Kodchasan/Kodchasan-Regular.ttf);
 }
 
 * {
@@ -86,16 +86,16 @@ body {
     background-size: cover;
     background-position-y: 6%; */
     background-color: papayawhip;
-    height: 60vh;
+    height: 40vh;
 }
 
 .menu {
-    /* background: url(../../images/menu2.jpeg);
+    background: url(../../images/menu2.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-y: 6%; */
+    background-position-y: 6%;
     background-color: papayawhip;
 }
 
@@ -125,7 +125,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position-y: 60%; */
-    background-color: papayawhip;
+    background-color: papayawhip !important;
     height: 50vh;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .tam {
-    height: 60vh !important;
+    height: 40vh !important;
 }
 
 .tam50vh {
@@ -210,7 +210,7 @@ hr {
 }
 
 .nav-item {
-    color: #0AA1D9 !important;
+    color: #E3BB30 !important;
 }
 
 .tab-content img {
@@ -288,8 +288,8 @@ figure:hover+span {
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     color: #495057;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-color: #dee2e6 #dee2e6 #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: #dee2e6 #dee2e6 #fff6;
 }
 
 .mt-4-5 {
@@ -298,4 +298,25 @@ figure:hover+span {
 
 .bg-pink {
     background-color: #C55F57 !important;
+}
+
+body {
+    background-color: #C55F57 !important;
+}
+
+.p-t {
+    padding-top: 6.3em;
+}
+
+.text-blue {
+    color: #14A4DD;
+}
+
+.tab-pane,
+.list-group-item {
+    background-color: navajowhite;
+}
+
+.bg-papaya {
+    background-color: papayawhip;
 }
