@@ -15,8 +15,10 @@
                                 $(".navbar-toggler").click();
                             }
                             $(window).scrollTop(0);
-                            $("#menu").removeClass("bg-dark");
-                            $("#menu").removeClass("sombra");
+                            // $("#menu").removeClass("bg-dark");
+                            // $("#menu").removeClass("sombra");
+                            $("#menu").addClass("bg-dark");
+                            $("#menu").addClass("sombra");
                         }
                     }
                 }).when("/menu", {

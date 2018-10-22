@@ -19,96 +19,233 @@
                 <div class="row justify-content-center align-items-center pt-5">
                     <div class="col-sm-10 col-md-11 col-lg-9 separacion pt-5 mt-5">
                         <!-- <p class="display-1 text-white text-center sombra-texto animated zoomIn texto-small"><strong>SAN COCHITO</strong></p> -->
-                        <p class="text-white text-center sombra-texto title-footer animated zoomIn texto-small mt-5 pt-5 pb-5 mb-5">NUESTRO MENÚ</p>
+                        <p class="text-white text-center sombra-texto title-footer animated zoomIn texto-small mt-5 pt-5 pb-5 mb-5">SERVICIOS</p>
 
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <!-- <div class="col-12">
-                                <p class="text-white text-center display-4 animated flipInX text-danger sombra-texto"><strong>Tortas ahogadas</strong></p>
+                                <p class="text-white text-center display-4 animated flipInX text-danger sombra-texto pl-0"><strong>Tortas ahogadas</strong></p>
             
                             </div>
                             <hr class="border border-warning bg-warning"> -->
                     <div class="col-12">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link sombra-texto active h3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <strong>TORTAS AHOGADAS</strong> </a>
-                                <a class="nav-item nav-link sombra-texto h3" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> <strong>TACOS</strong> </a>
-                                <a class="nav-item nav-link sombra-texto h3" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> <strong>MINI TORTAS</strong> </a>
-                                <a class="nav-item nav-link sombra-texto h3" id="nav-paquete-tab" data-toggle="tab" href="#nav-paquete" role="tab" aria-controls="nav-paquete" aria-selected="false"> <strong>PAQUETES</strong> </a>
+                                <a class="nav-item nav-link sombra-texto active h3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <strong>SERVICIO 1</strong> </a>
+                                <a class="nav-item nav-link sombra-texto h3" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> <strong>SERVICIO 2</strong> </a>
+                                <a class="nav-item nav-link sombra-texto h3" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> <strong>SERVICIO 3</strong> </a>
+                                <!-- <a class="nav-item nav-link sombra-texto h3" id="nav-paquete-tab" data-toggle="tab" href="#nav-paquete" role="tab" aria-controls="nav-paquete" aria-selected="false"> <strong>PAQUETES</strong> </a> -->
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
+
                             <!------------------------------------------- Tortas ahogadas ----------------------------------->
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="container-fluid bg-danger">
+                                    <p class="bg-danger h3 eslogan text-center text-white">* Todos los paquetes se dejan en cubetas y bolsas.</p>
+                                </div>
                                 <div class="row pb-5 mt-5 justify-content-center">
                                     <div class="col-12 col-lg-6">
                                         <figure class="sombra">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/torta-carnitas.jpg" alt="" class="img-fluid sombra"></a>
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2009.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <p class="text-warning sombra-texto text-center h3"><strong>Ahogada de Carnitas</strong></p>
-                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
-                                        </p>
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 1</strong></p>
+                                        <div></div>
+                                        <p class="text-danger pl-0 h3 pl-0"> 1 Torta y 2 tacos (sin Carne).</p>
+                                        <div class="row tex-secondary">
+                                            <div class="col-6">
+                                                <p class="lead">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">$62.00</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                            </div>
+                                            <div class="col-6 mt-4-5">
+                                                <p class="lead"> $69.00</p>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                     <div class="col-12 col-lg-6 d-lg-block d-none mt-5">
-                                        <p class="text-warning sombra-texto text-center h3"><strong>Ahogada de Buche</strong></p>
-                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h3"> 3 Tacos (con carne).
                                         </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="lead">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">$62.00</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead mt-4-5"> $69.00</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
                                         <figure class="sombra">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/torta-buche.jpg" alt="" class="img-fluid sombra"></a>
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2051.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
 
                                     </div>
 
                                     <div class="col-12 col-lg-6 d-block d-lg-none">
-                                        <p class="text-warning sombra-texto mt-5 text-center h3"><strong>Ahogada de Buche</strong></p>
-                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h3"> 3 Tacos (con carne).
                                         </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="lead">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">$62.00</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead mt-4-5"> $69.00</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
                                         <figure class="sombra">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/torta-lengua.jpg" alt="" class="img-fluid sombra"></a>
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2035.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
-                                        <p class="text-warning sombra-texto text-center h3"><strong>Ahogada de Lengua</strong></p>
-                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
-                                        </p>
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 3</strong></p>
+                                        <p class="text-danger pl-0 h3"> 1 torta mini y 2 tacos (con carne).
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="lead">Precio por paquete:</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="lead">$66.00</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="lead mt-4-5"> $73.00</p>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
-                            <!------------------------------------------- Tacos----------------------------------->
+                            <!------------------------------------------- PAQUETE 2----------------------------------->
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <div class="row pb-5 mt-5">
-                                    <div class="col-6">
+                                <div class="container-fluid bg-danger">
+                                    <p class="bg-danger h3 eslogan text-center text-white">* Todos los paquetes se entregan en bolsas individuales.</p>
+                                </div>
+                                <div class="row pb-5 mt-5 justify-content-center">
+                                    <div class="col-12 col-lg-6">
                                         <figure class="sombra">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/taco-carne.jpg" alt="" class="img-fluid sombra"></a>
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2014.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
                                     </div>
-                                    <div class="col-6">
-                                        <p class="text-warning sombra-texto text-center h3"><strong>Taco Dorado</strong></p>
-                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
-                                        </p>
+                                    <div class="col-12 col-lg-6">
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 1</strong></p>
+                                        <p class="text-danger pl-0 h3"> 1 Torta y 2 tacos (sin Carne).</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="lead">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">$74.00</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                            </div>
+                                            <div class="col-6 mt-4-5">
+                                                <p class="lead"> $81.00</p>
+                                            </div>
+                                        </div>
+
+
                                     </div>
-                                    <div class="col-6 mt-5">
-                                        <p class="text-warning sombra-texto text-center h3"><strong>Taco con Carne</strong></p>
-                                        <p class="lead text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto autem quae officiis hic quasi eos, placeat perferendis, consectetur fugiat amet quod non alias similique fugit voluptate saepe at minus.
+                                    <div class="col-12 col-lg-6 d-lg-block d-none mt-5">
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h3"> 3 Tacos (con carne).
                                         </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="lead">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">$74.00</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead mt-4-5"> $81.00</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-6 mt-5">
+                                    <div class="col-12 col-lg-6 mt-5">
                                         <figure class="sombra">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/menu/taco-dorado.jpg" alt="" class="img-fluid sombra"></a>
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2049.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
 
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 d-block d-lg-none">
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h3"> 3 Tacos (con carne).
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="lead">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">$74.00</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="lead mt-4-5"> $81.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-5">
+                                        <figure class="sombra">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2047.JPG" alt="" class="img-fluid sombra"></a>
+
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-5">
+                                        <p class="text-warning h3 pb-3 pl-0"><strong>Paquete 3</strong></p>
+                                        <p class="text-danger pl-0 h3 pl-0"> 1 torta mini y 2 tacos (con carne).
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="lead">Precio por paquete:</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="lead">$78.00</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="lead">Con refresco de 2L para 4 paquetes (Incluye Vasos):</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="lead mt-4-5"> $81.00</p>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -121,5 +258,8 @@
 
             </div>
         </div>
+    </div>
+    <div class="container-fluid bg-pink">
+        <p class="bg-pink h3 eslogan text-center text-white">* Todos nuestros paquetes incluyen: Platos, Cucharas, Servilletas y Desechablaes.</p>
     </div>
 </section>
