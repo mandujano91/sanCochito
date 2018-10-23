@@ -26,7 +26,6 @@ nav {
     width: 160px !important;
     height: 160px !important;
     transition: width 0.6s, height 0.6s;
-    
 }
 
 .tam-logo-principal {
@@ -91,13 +90,13 @@ body {
 }
 
 .menu {
-    background: url(../../images/menu2.jpeg);
+    /* background: url(../../images/menu2.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-y: 6%;
-    background-color: papayawhip;
+    background-position-y: 6%; */
+    background-image: linear-gradient(to right, rgb(255, 247, 235), papayawhip);
 }
 
 .contactanos {
@@ -223,7 +222,7 @@ hr {
 }
 
 .modal-backdrop {
-    background-color: rgba(139, 139, 139, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -294,7 +293,7 @@ figure:hover+span {
 }
 
 .mt-4-5 {
-    margin-top: 2rem !important;
+    margin-top: 1.6rem !important;
 }
 
 .bg-pink {
@@ -313,6 +312,10 @@ body {
     color: #14A4DD;
 }
 
+.bg-blue {
+    background-color: #14A4DD;
+}
+
 .tab-pane,
 .list-group-item {
     background-color: papayawhip;
@@ -322,10 +325,17 @@ body {
     background-color: papayawhip;
 }
 
-.refrescos li {
+.refrescos li,
+.formas li {
     background: papayawhip;
 }
 
-.refrescos li:nth-child(odd) {
+.refrescos li:nth-child(odd),
+.formas li:nth-child(odd) {
     background: rgb(235, 212, 176);
+}
+
+.formas-pago,
+.refrescos {
+    padding: 30px;
 }
