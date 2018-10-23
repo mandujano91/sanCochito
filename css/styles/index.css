@@ -314,9 +314,17 @@ body {
 
 .tab-pane,
 .list-group-item {
-    background-color: navajowhite;
+    background-color: papayawhip;
 }
 
 .bg-papaya {
     background-color: papayawhip;
+}
+
+.refrescos li {
+    background: papayawhip;
+}
+
+.refrescos li:nth-child(odd) {
+    background: rgb(235, 212, 176);
 }
