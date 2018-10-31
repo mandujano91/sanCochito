@@ -11,7 +11,7 @@
                     resolve: {
                         "check": function($location, $rootScope) {
                             $rootScope.item = 1;
-                            if ($(".navbar-toggler").is(":visible") && $("#navbarSupportedContent").is(":visible")) {
+                            if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
                                 $(".navbar-toggler").click();
                             }
                             $(window).scrollTop(0);
@@ -28,7 +28,7 @@
                     resolve: {
                         "check": function($location, $rootScope) {
                             $rootScope.item = 2;
-                            if ($(".navbar-toggler").is(":visible") && $("#navbarSupportedContent").is(":visible")) {
+                            if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
                                 $(".navbar-toggler").click();
                             }
                             $(window).scrollTop(0);
@@ -36,7 +36,33 @@
                             $("#menu").addClass("sombra");
                         }
                     }
-                })
+                }).when("/nosotros", {
+                    templateUrl: "views/templates/nosotros.html",
+                    resolve: {
+                        "check": function($location, $rootScope) {
+                            $rootScope.item = 3;
+                            if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
+                                $(".navbar-toggler").click();
+                            }
+                            $(window).scrollTop(0);
+                            $("#menu").addClass("bg-dark");
+                            $("#menu").addClass("sombra");
+                        }
+                    }
+                }).when("/contacto", {
+                    templateUrl: "views/templates/contacto.html",
+                    resolve: {
+                        "check": function($location, $rootScope) {
+                            $rootScope.item = 4;
+                            if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
+                                $(".navbar-toggler").click();
+                            }
+                            $(window).scrollTop(0);
+                            $("#menu").addClass("bg-dark");
+                            $("#menu").addClass("sombra");
+                        }
+                    }
+                });
         });
 
 }());
