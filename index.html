@@ -9,6 +9,7 @@
     <title>Toratas San Cochito</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/libs/hover-min.css">
     <link rel="stylesheet" href="css/styles/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
@@ -17,34 +18,38 @@
 
 <body ng-controller="scroll">
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark text-center" id="menu">
+    <p class="text-center">
         <a class="navbar-brand text-warning ml-2 mt-2" href="#/!">
             <img src="images/logo.png" id="logo" class="d-inline-block align-top tam-logo" alt="">
         </a>
+    </p>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-center" id="menu">
+
+
         <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars fa-2x text-light"></i>
+                    <i class="fas fa-bars fa-2x text-dark"></i>
             </button>
         <div class="collapse navbar-collapse" id="navegacion">
             <ul class="navbar-nav ml-auto mr-auto text-center">
-                <li class="nav-items nav-font">
-                    <a href="#/!" class="sombra-texto" ng-class="['nav-link',{'active':item === 1}]"><strong>INICIO</strong> <span class="sr-only">(current)</span></a>
+                <li class="nav-items nav-font mr-3">
+                    <a href="#/!" class="hvr-grow" ng-class="['nav-link',{'active':item === 1}]">INICIO <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-items nav-font">
-                    <a href="#!/menu" class="sombra-texto" ng-class="['nav-link',{'active':item === 2}]"><strong>EVENTOS</strong> <span class="sr-only">(current)</span></a>
+                <li class="nav-items nav-font  mr-3">
+                    <a href="#!/menu" class="hvr-grow" ng-class="['nav-link',{'active':item === 2}]">EVENTOS <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-items nav-font">
-                    <a href="#!/nosotros" class="sombra-texto" ng-class="['nav-link',{'active':item === 3}]"><strong>NOSOTROS</strong> <span class="sr-only">(current)</span></a>
+                <li class="nav-items nav-font  mr-3">
+                    <a href="#!/nosotros" class="hvr-grow" ng-class="['nav-link',{'active':item === 3}]">NOSOTROS <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-items nav-font">
-                    <a href="#!/contacto" class="sombra-texto" ng-class="['nav-link',{'active':item === 4}]"><strong>CONTACTO</strong> <span class="sr-only">(current)</span></a>
+                <li class="nav-items nav-font mr-3">
+                    <a href="#!/contacto" class="hvr-grow" ng-class="['nav-link',{'active':item === 4}]">CONTACTO <span class="sr-only">(current)</span></a>
                 </li>
 
             </ul>
         </div>
     </nav>
-    <div class="container-fluid bg-pink animated pt-5 slideInLeft">
-        <p class="bg-pink h3 eslogan text-center text-white p-t">Nuestro eslogan</p>
+    <div class="container-fluid bg-secondary animated slideInLeft">
+        <p class="bg-secondary h3 eslogan text-center text-dark py-4">Nuestro eslogan</p>
     </div>
     <!-- ------------------- -->
 
@@ -61,11 +66,11 @@
             <div>
                 <div class="row justify-content-center align-items-center tam">
                     <div class="col-sm-10 col-md-11 col-lg-9">
-                        <p class="text-white text-center title-footer d-none d-lg-block  sombra-texto">¡HAZ TU PEDIDO!</p>
-                        <p class="text-white text-center title-footer-sm d-lg-none d-block sombra-texto">¡HAZ TU PEDIDO!</p>
-                        <p class="text-light text-center h1 pb-2 ">Comunicate con nosotros al: </p>
-                        <p class="text-white text-center h3"><strong> <i class="fas fa-phone text-white sombra-texto"></i> 33 21 25 36</strong></p>
-                        <p class="text-white text-center h3"><strong> <i class="fas fa-phone text-white sombra-texto"></i> 33 21 25 36</strong></p>
+                        <p class="text-blue text-center title-footer d-none d-lg-block">¡HAZ TU PEDIDO!</p>
+                        <p class="text-blue text-center title-footer-sm d-lg-none d-block">¡HAZ TU PEDIDO!</p>
+                        <p class="text-dark text-center h1 pb-2 ">Comunicate con nosotros al: </p>
+                        <p class="text-dark text-center h3"><strong> <i class="fas fa-phone text-dark"></i> 33 21 25 36</strong></p>
+                        <p class="text-dark text-center h3"><strong> <i class="fas fa-phone text-dark"></i> 33 21 25 36</strong></p>
 
                     </div>
 
@@ -75,7 +80,7 @@
         </div>
         <div class="container-fluid footer paddiing-0  pb-2">
             <div class="opacidad-imagen">
-                <p class="text-white text-center h3 pt-3 m-0"><strong>Siguenos en: <a href="#"><img src="images/face.png" alt="" height="40px" width="40px"></a> <a href="#"><img src="images/twitter.png" alt="" height="40px" width="40px"></a> <a href="#"><img src="images/instagram.png" alt="" height="40px" width="40px"></a></strong></p>
+                <p class="text-white text-center h3 pt-3 m-0"><strong>Siguenos en: <a href="#"><img src="images/face.png" class="hvr-grow" alt="" height="40px" width="40px"></a> <a href="#"><img src="images/twitter.png" class="hvr-grow" alt="" height="40px" width="40px"></a> <a href="#"><img src="images/instagram.png" class="hvr-grow" alt="" height="40px" width="40px"></a></strong></p>
 
             </div>
         </div>

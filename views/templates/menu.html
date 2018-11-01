@@ -1,4 +1,7 @@
 <section class="" pb-5>
+    <div class="container-fluid bg-pink">
+        <p class="bg-pink h3 eslogan text-center text-white">* Todos nuestros paquetes incluyen: Platos, Cucharas, Servilletas y Desechables.</p>
+    </div>
     <div class="modal fade" id="imagen" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
         <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
@@ -20,7 +23,7 @@
                 <div class="row justify-content-center align-items-center pt-5">
                     <div class="col-sm-10 col-md-11 col-lg-9 separacion">
                         <!-- <p class="display-1 text-white text-center sombra-texto animated zoomIn texto-small"><strong>SAN COCHITO</strong></p> -->
-                        <p class="text-blue sombra-texto text-center title-footer animated flipInX texto-small  pb-3 mb-5">SERVICIOS</p>
+                        <p class="text-blue text-center title-footer animated flipInX texto-small sombra-texto pb-3 mb-5">SERVICIOS</p>
 
                     </div>
                 </div>
@@ -33,46 +36,44 @@
                     <div class="col-12">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active h3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <strong>SERVICIO 1</strong> </a>
-                                <a class="nav-item nav-link h3" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> <strong>SERVICIO 2</strong> </a>
-                                <a class="nav-item nav-link h3" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> <strong>SERVICIO 3</strong> </a>
-                                <a class="nav-item nav-link h3" id="nav-bebidas-tab" data-toggle="tab" href="#nav-bebidas" role="tab" aria-controls="nav-contact" aria-selected="false"> <strong>BEBIDAS</strong> </a>
-                                <a class="nav-item nav-link h3" id="nav-pago-tab" data-toggle="tab" href="#nav-pago" role="tab" aria-controls="nav-pago" aria-selected="false"> <strong>FORMAS DE PAGO</strong> </a>
+                                <a class="nav-item nav-link active h3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> SERVICIO 1 </a>
+                                <a class="nav-item nav-link h3" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> SERVICIO 2 </a>
+                                <a class="nav-item nav-link h3" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> SERVICIO 3 </a>
+                                <a class="nav-item nav-link h3" id="nav-bebidas-tab" data-toggle="tab" href="#nav-bebidas" role="tab" aria-controls="nav-contact" aria-selected="false"> BEBIDAS </a>
+                                <a class="nav-item nav-link h3" id="nav-pago-tab" data-toggle="tab" href="#nav-pago" role="tab" aria-controls="nav-pago" aria-selected="false"> FORMAS DE PAGO </a>
 
                                 <!-- <a class="nav-item nav-link sombra-texto h3" id="nav-paquete-tab" data-toggle="tab" href="#nav-paquete" role="tab" aria-controls="nav-paquete" aria-selected="false"> <strong>PAQUETES</strong> </a> -->
                             </div>
                         </nav>
                         <div class="tab-content sombra" id="nav-tabContent">
-
-
                             <div class="tab-pane fade show mb-5  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div class="container-fluid bg-pink">
                                     <p class="bg-pink h3 eslogan text-center text-white">* Todos los paquetes se dejan en cubetas y bolsas.</p>
                                 </div>
                                 <div class="row pb-5 mt-5 justify-content-center">
-                                    <div class="col-12 col-lg-6 pl-5">
-                                        <figure class="">
-
+                                    <div class="col-12 col-lg-6 pl-lg-5">
+                                        <figure class="d-lg-block d-none">
                                             <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2009.JPG" alt="" class="img-fluid sombra"></a>
-
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2009.JPG" alt="" class="img-fluid sombra"></a>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 1</strong></p>
+                                        <p class="text-blue  h3 pb-3 pl-0 d-lg-block d-none"><strong>Paquete 1</strong></p>
+                                        <p class="text-blue  h3 pb-3 pl-0 d-block d-lg-none mt-5 text-center"><strong>Paquete 1</strong></p>
                                         <div></div>
-                                        <p class="text-danger pl-0 h4 pl-0"> 1 Torta y 2 tacos (sin Carne).</p>
+                                        <p class="text-danger pl-0 h4 pl-0 text-center text-lg-left"> 1 Torta y 2 tacos (sin Carne).</p>
                                         <div class="row tex-secondary">
-                                            <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                            <div class="col-7 col-lg-6">
+                                                <p class="text-lg-left text-right f-size-menu">Precio por paquete:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=""><strong>$62.00</strong></p>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="text-lg-left text-center f-size-menu"><strong>$62.00</strong></p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                            <div class="col-7 col-lg-6">
+                                                <p class="text-lg-left text-right f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
-                                            <div class="col-6 mt-4-5">
-                                                <p class=""><strong>$69.00</strong>
+                                            <div class="col-5 col-lg-6 mt-4-5">
+                                                <p class="text-lg-left text-center f-size-menu"><strong>$69.00</strong>
                                                 </p>
                                             </div>
                                         </div>
@@ -85,69 +86,73 @@
                                         </p>
                                         <div class="row">
                                             <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                                <p class=" f-size-menu">Precio por paquete:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=""><strong>$62.00</strong></p>
+                                                <p class="f-size-menu"><strong>$62.00</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $69.00</strong>
+                                                <p class="f-size-menu mt-4-5"><strong> $69.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
-                                        <figure class="">
+                                        <figure class="d-lg-block d-none">
                                             <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2051.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2051.JPG" alt="" class="img-fluid sombra"></a>
+
 
                                     </div>
 
                                     <div class="col-12 col-lg-6 d-block d-lg-none">
-                                        <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
-                                        <p class="text-danger pl-0 h4"> 3 Tacos (con carne).
+                                        <p class="text-blue  h3 pb-3 pl-0 mt-5 text-center"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h4 text-center"> 3 Tacos (con carne).
                                         </p>
                                         <div class="row">
-                                            <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                            <div class="col-lg-6 col-7">
+                                                <p class="text-right f-size-menu">Precio por paquete:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=""><strong>$62.00</strong></p>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="text-lg-left text-center f-size-menu"><strong>$62.00</strong></p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                            <div class="col-lg-6 col-7 text-right">
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $69.00</strong>
+                                            <div class="col-5 col-lg-6">
+                                                <p class=" f-size-menu text-lg-left text-center mt-4-5"><strong> $69.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-6 mt-5 pl-5">
-                                        <figure class="">
+                                    <div class="col-12 col-lg-6 mt-5 pl-lg-5">
+                                        <figure class="d-none d-lg-block">
                                             <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2035.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2035.JPG" alt="" class="img-fluid sombra"></a>
+
                                     </div>
-                                    <div class="col-12 col-lg-6 mt-5 ">
+                                    <div class="col-12 col-lg-6 mt-5 text-center text-lg-left">
                                         <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 3</strong></p>
                                         <p class="text-danger pl-0 h4"> 1 torta mini y 2 tacos (con carne).
                                             <div class="row">
-                                                <div class="col-6">
-                                                    <p class="">Precio por paquete:</p>
+                                                <div class="col-lg-6 col-7 text-lg-left text-right">
+                                                    <p class="f-size-menu">Precio por paquete:</p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class=""><strong>$66.00</strong></p>
+                                                <div class="col-lg-6 col-5">
+                                                    <p class="f-size-menu"><strong>$66.00</strong></p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <div class="col-lg-6 col-7 text-lg-left text-right">
+                                                    <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class=" mt-4-5"><strong> $73.00</strong>
+                                                <div class="col-lg-6 col-5">
+                                                    <p class="f-size-menu mt-4-5"><strong> $73.00</strong>
                                                     </p>
                                                 </div>
                                             </div>
@@ -160,27 +165,32 @@
                                     <p class="bg-pink h3 eslogan text-center text-white">* Todos los paquetes se entregan en bolsas individuales.</p>
                                 </div>
                                 <div class="row pb-5 mt-5 justify-content-center">
-                                    <div class="col-12 col-lg-6 pl-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2014.JPG" alt="" class="img-fluid sombra"></a>
+                                    <div class="col-12 col-lg-6 pl-lg-5">
+                                        <figure class="d-lg-block d-none">
+
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2010.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2010.JPG" alt="" class="img-fluid sombra"></a>
+
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 1</strong></p>
-                                        <p class="text-danger pl-0 h4"> 1 Torta y 2 tacos (sin Carne).</p>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                        <p class="text-blue  h3 pb-3 pl-0 d-lg-block d-none"><strong>Paquete 1</strong></p>
+                                        <p class="text-blue  h3 pb-3 pl-0 d-block d-lg-none mt-5 text-center"><strong>Paquete 1</strong></p>
+                                        <div></div>
+                                        <p class="text-danger pl-0 h4 pl-0 text-center text-lg-left"> 1 Torta y 2 tacos (sin Carne).</p>
+                                        <div class="row tex-secondary">
+                                            <div class="col-7 col-lg-6">
+                                                <p class="text-lg-left text-right f-size-menu">Precio por paquete:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=""><strong>$74.00</strong></p>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="text-lg-left text-center f-size-menu"><strong>$74.00</strong></p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                            <div class="col-7 col-lg-6">
+                                                <p class="text-lg-left text-right f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
-                                            <div class="col-6 mt-4-5">
-                                                <p class=""><strong> $81.00</strong>
+                                            <div class="col-5 col-lg-6 mt-4-5">
+                                                <p class="text-lg-left text-center f-size-menu"><strong>$81.00</strong>
                                                 </p>
                                             </div>
                                         </div>
@@ -193,70 +203,73 @@
                                         </p>
                                         <div class="row">
                                             <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                                <p class="f-size-menu">Precio por paquete:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=""><strong>$74.00</strong></p>
+                                                <p class="f-size-menu"><strong>$74.00</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $81.00</strong>
+                                                <p class="f-size-menu mt-4-5"><strong> $81.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2049.JPG" alt="" class="img-fluid sombra"></a>
+                                        <figure class="d-lg-block d-none">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2050.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2050.JPG" alt="" class="img-fluid sombra"></a>
+
 
                                     </div>
 
                                     <div class="col-12 col-lg-6 d-block d-lg-none">
-                                        <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
-                                        <p class="text-danger pl-0 h4"> 3 Tacos (con carne).
+                                        <p class="text-blue  h3 pb-3 pl-0 mt-5 text-center"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h4 text-center"> 3 Tacos (con carne).
                                         </p>
                                         <div class="row">
-                                            <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                            <div class="col-lg-6 col-7">
+                                                <p class="text-right f-size-menu">Precio por paquete:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=""><strong>$74.00</strong></p>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="text-lg-left text-center f-size-menu"><strong>$74.00</strong></p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                            <div class="col-lg-6 col-7 text-right">
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $81.00</strong>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="text-lg-left text-center mt-4-5 f-size-menu"><strong> $81.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-12 col-lg-6 mt-5 pl-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2047.JPG" alt="" class="img-fluid sombra"></a>
+                                    <div class="col-12 col-lg-6 mt-5 pl-lg-5">
+                                        <figure class="d-none d-lg-block">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2041.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2041.JPG" alt="" class="img-fluid sombra"></a>
+
                                     </div>
-                                    <div class="col-12 col-lg-6 mt-5">
+                                    <div class="col-12 col-lg-6 mt-5 text-center text-lg-left">
                                         <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 3</strong></p>
-                                        <p class="text-danger pl-0 h4 pl-0"> 1 torta mini y 2 tacos (con carne).
+                                        <p class="text-danger pl-0 h4"> 1 torta mini y 2 tacos (con carne).
                                             <div class="row">
-                                                <div class="col-6">
-                                                    <p class="">Precio por paquete:</p>
+                                                <div class="col-lg-6 col-7 text-lg-left text-right">
+                                                    <p class="f-size-menu">Precio por paquete:</p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class=""><strong>$78.00</strong></p>
+                                                <div class="col-lg-6 col-5">
+                                                    <p class="f-size-menu"><strong>$78.00</strong></p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <div class="col-lg-6 col-7 text-lg-left text-right">
+                                                    <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class=" mt-4-5"><strong> $81.00</strong>
+                                                <div class="col-lg-6 col-5">
+                                                    <p class="f-size-menu mt-4-5"><strong> $85.00</strong>
                                                     </p>
                                                 </div>
                                             </div>
@@ -269,27 +282,32 @@
                                     <p class="bg-pink h3 eslogan text-center text-white">* Se atiende el servicio en el evento.</p>
                                 </div>
                                 <div class="row pb-5 mt-5 justify-content-center">
-                                    <div class="col-12 col-lg-6 pl-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2004.JPG" alt="" class="img-fluid sombra"></a>
+                                    <div class="col-12 col-lg-6 pl-lg-5">
+                                        <figure class="d-lg-block d-none">
+
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2014.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2014.JPG" alt="" class="img-fluid sombra"></a>
+
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 1</strong></p>
-                                        <p class="text-danger pl-0 h4"> 1 Torta y 2 tacos (sin Carne).</p>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                        <p class="text-blue  h3 pb-3 pl-0 d-lg-block d-none"><strong>Paquete 1</strong></p>
+                                        <p class="text-blue  h3 pb-3 pl-0 d-block d-lg-none mt-5 text-center"><strong>Paquete 1</strong></p>
+                                        <div></div>
+                                        <p class="text-danger pl-0 h4 pl-0 text-center text-lg-left"> 1 Torta y 2 tacos (sin Carne).</p>
+                                        <div class="row tex-secondary">
+                                            <div class="col-7 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-right">Precio por paquete:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=""><strong>$71.00</strong></p>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-center"><strong>$71.00</strong></p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                            <div class="col-7 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-right">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
-                                            <div class="col-6 mt-4-5">
-                                                <p class=""><strong> $78.00</strong>
+                                            <div class="col-5 col-lg-6 mt-4-5">
+                                                <p class="f-size-menu text-lg-left text-center"><strong>$78.00</strong>
                                                 </p>
                                             </div>
                                         </div>
@@ -302,103 +320,130 @@
                                         </p>
                                         <div class="row">
                                             <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                                <p class="f-size-menu">Precio por paquete:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=""><strong>$71.00</strong></p>
+                                                <p class="f-size-menu"><strong>$71.00</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $78.00</strong>
+                                                <p class="f-size-menu mt-4-5"><strong> $78.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2050.JPG" alt="" class="img-fluid sombra"></a>
+                                        <figure class="d-lg-block d-none">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2051.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2051.JPG" alt="" class="img-fluid sombra"></a>
+
 
                                     </div>
 
                                     <div class="col-12 col-lg-6 d-block d-lg-none">
-                                        <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 2</strong></p>
-                                        <p class="text-danger pl-0 h4"> 3 Tacos (con carne).
+                                        <p class="text-blue  h3 pb-3 pl-0 mt-5 text-center"><strong>Paquete 2</strong></p>
+                                        <p class="text-danger pl-0 h4 text-center"> 3 Tacos (con carne).
                                         </p>
                                         <div class="row">
-                                            <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                            <div class="col-lg-6 col-7">
+                                                <p class="text-right f-size-menu">Precio por paquete:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=""><strong>$71.00</strong></p>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-center"><strong>$71.00</strong></p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                            <div class="col-lg-6 col-7 text-right">
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
-                                            <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $78.00</strong>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-center mt-4-5"><strong> $78.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-12 col-lg-6 mt-5 pl-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2044.JPG" alt="" class="img-fluid sombra"></a>
+                                    <div class="col-12 col-lg-6 mt-5 pl-lg-5">
+                                        <figure class="d-none d-lg-block">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2020.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2020.JPG" alt="" class="img-fluid sombra"></a>
+
                                     </div>
-                                    <div class="col-12 col-lg-6 mt-5">
+                                    <div class="col-12 col-lg-6 mt-5 text-center text-lg-left">
                                         <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 3</strong></p>
-                                        <p class="text-danger pl-0 h4 pl-0"> 1 torta mini y 2 tacos (con carne).
+                                        <p class="text-danger pl-0 h4"> 1 torta mini y 2 tacos (con carne).
                                             <div class="row">
-                                                <div class="col-6">
-                                                    <p class="">Precio por paquete:</p>
+                                                <div class="col-lg-6 col-7 text-lg-left text-right">
+                                                    <p class="f-size-menu">Precio por paquete:</p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class=""><strong>$75.00</strong></p>
+                                                <div class="col-lg-6 col-5">
+                                                    <p class="f-size-menu"><strong>$75.00</strong></p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <div class="col-lg-6 col-7 text-lg-left text-right">
+                                                    <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                                 </div>
-                                                <div class="col-6">
-                                                    <p class=" mt-4-5"><strong> $82.00</strong>
+                                                <div class="col-lg-6 col-5">
+                                                    <p class="f-size-menu mt-4-5"><strong> $82.00</strong>
                                                     </p>
                                                 </div>
                                             </div>
                                     </div>
                                     <div class="col-12 col-lg-6 d-lg-block d-none mt-5 pl-5">
                                         <p class="text-blue  h3 pb-3 pl-0"><strong>Paquete 4</strong></p>
-                                        <p class="text-danger pl-0 h4"> 4 tacos blanditos.
+                                        <p class="text-danger pl-0 h4"> 4 Tacos blanditos.
                                         </p>
                                         <div class="row">
                                             <div class="col-6">
-                                                <p class="">Precio por paquete:</p>
+                                                <p class="f-size-menu">Precio por paquete:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=""><strong>$77.00</strong></p>
+                                                <p class="f-size-menu"><strong>$77.00</strong></p>
                                             </div>
                                             <div class="col-6">
-                                                <p class="">Con refresco de 2L para 4 paquetes:</p>
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
                                             </div>
                                             <div class="col-6">
-                                                <p class=" mt-4-5"><strong> $83.00</strong>
+                                                <p class="f-size-menu mt-4-5"><strong> $83.00</strong>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6 mt-5">
-                                        <figure class="">
-                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2050.JPG" alt="" class="img-fluid sombra"></a>
+                                        <figure class="d-lg-block d-none">
+                                            <a href="" data-toggle="modal" data-target="#imagen" ng-click="menu.muestraImagen($event)"><img src="images/paquetes/DSC_2052.JPG" alt="" class="img-fluid sombra"></a>
 
                                         </figure>
+                                        <a href="" class="d-block d-lg-none px-2"><img src="images/paquetes/DSC_2052.JPG" alt="" class="img-fluid sombra"></a>
 
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 d-block d-lg-none">
+                                        <p class="text-blue  h3 pb-3 pl-0 mt-5 text-center"><strong>Paquete 4</strong></p>
+                                        <p class="text-danger pl-0 h4 text-center"> 4 Tacos blanditos.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-7">
+                                                <p class="text-right f-size-menu">Precio por paquete:</p>
+                                            </div>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-center"><strong>$77.00</strong></p>
+                                            </div>
+                                            <div class="col-lg-6 col-7 text-right">
+                                                <p class="f-size-menu">Con refresco de 2L para 4 paquetes:</p>
+                                            </div>
+                                            <div class="col-5 col-lg-6">
+                                                <p class="f-size-menu text-lg-left text-center mt-4-5"><strong> $83.00</strong>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="tab-pane fade mb-5 " id="nav-bebidas" role="tabpanel" aria-labelledby="nav-bebidas-tab">
                                 <div class="container-fluid bg-pink">
                                     <p class="bg-pink h3 eslogan text-center text-white">* Refrescos de 2 litros para 4 paquetes</p>
@@ -479,7 +524,5 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-pink">
-        <p class="bg-pink h3 eslogan text-center text-white">* Todos nuestros paquetes incluyen: Platos, Cucharas, Servilletas y Desechables.</p>
-    </div>
+
 </section>

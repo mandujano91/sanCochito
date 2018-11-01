@@ -17,8 +17,8 @@
                             $(window).scrollTop(0);
                             // $("#menu").removeClass("bg-dark");
                             // $("#menu").removeClass("sombra");
-                            $("#menu").addClass("bg-dark");
-                            $("#menu").addClass("sombra");
+                            // $("#menu").addClass("bg-dark");
+                            // $("#menu").addClass("sombra");
                         }
                     }
                 }).when("/menu", {
@@ -32,8 +32,8 @@
                                 $(".navbar-toggler").click();
                             }
                             $(window).scrollTop(0);
-                            $("#menu").addClass("bg-dark");
-                            $("#menu").addClass("sombra");
+                            // $("#menu").addClass("bg-dark");
+                            // $("#menu").addClass("sombra");
                         }
                     }
                 }).when("/nosotros", {
@@ -45,8 +45,8 @@
                                 $(".navbar-toggler").click();
                             }
                             $(window).scrollTop(0);
-                            $("#menu").addClass("bg-dark");
-                            $("#menu").addClass("sombra");
+                            // $("#menu").addClass("bg-dark");
+                            // $("#menu").addClass("sombra");
                         }
                     }
                 }).when("/contacto", {
@@ -58,8 +58,8 @@
                                 $(".navbar-toggler").click();
                             }
                             $(window).scrollTop(0);
-                            $("#menu").addClass("bg-dark");
-                            $("#menu").addClass("sombra");
+                            // $("#menu").addClass("bg-dark");
+                            // $("#menu").addClass("sombra");
                         }
                     }
                 });
