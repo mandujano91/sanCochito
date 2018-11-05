@@ -2,34 +2,34 @@
     <div class="container-fluid">
         <div class="row justify-content-center bg-white py-5">
             <div class="col-12">
-                <p class="text-blue text-center title-footer animated flipInX d-lg-block d-none"> ¡CONTACTATE CON NOSOTROS!</p>
+                <p class="text-blue text-center title-footer animated flipInX d-lg-block d-none"> ¡ENVIANOS UN CORREO!</p>
                 <p class="text-blue text-center title-footer-sm  animated flipInX d-block d-lg-none"> CORREO</p>
 
             </div>
             <div class="col-lg-4 col-12">
-                <form>
+                <form id="formulario_correo" class="animated slideInUp" name="formulario_correo" ng-submit="email.enviarCorreo()" novalidate>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Nombre</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu nombre">
+                        <label for="nombre"><span class="text-danger">*</span> Nombre</label>
+                        <input type="text" class="form-control" ng-class="{'invalido': formulario_correo.$submitted && !email.nombre}" id="nombre" placeholder="Ingresa tu nombre" ng-required="true" ng-model="email.nombre" ng-disabled="email.procesando">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa correo electrónico">
+                        <label for="correo"><span class="text-danger">*</span> Correo electrónico</label>
+                        <input type="email" class="form-control" ng-class="{'invalido': formulario_correo.$submitted && !email.correo}" id="correo" aria-describedby="emailHelp" ng-required="true" placeholder="Ingresa correo electrónico" ng-model="email.correo" ng-disabled="email.procesando">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Teléfono</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa teléfono">
+                        <label for="telefono"><span class="text-danger">*</span> Teléfono</label>
+                        <input type="number" class="form-control" ng-class="{'invalido': formulario_correo.$submitted && !email.telefono}" id="telefono" placeholder="Ingresa teléfono" ng-required="true" ng-model="email.telefono" ng-disabled="email.procesando">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Asunto</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa asunto">
+                        <label for="asunto"><span class="text-danger">*</span> Asunto</label>
+                        <input type="text" class="form-control" ng-class="{'invalido': formulario_correo.$submitted && !email.asunto}" id="asunto" placeholder="Ingresa asunto" ng-required="true" ng-model="email.asunto" ng-disabled="email.procesando">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="mensaje"><span class="text-danger">*</span> Mensaje</label>
+                        <textarea class="form-control" id="mensaje" ng-class="{'invalido': formulario_correo.$submitted && !email.mensaje}" rows="3" ng-model="email.mensaje" ng-required="true" ng-disabled="email.procesando"></textarea>
                     </div>
 
-                    <p class="text-right"><button type="submit" class="btn btn-primary"><i class="fas fa-share-square"></i> Enviar</button></p>
+                    <p class="text-right"><button type="submit" class="btn btn-primary" ng-disabled="email.procesando"><i class="fas fa-share-square" ng-if="!email.procesando"></i> <i class="fa fa-spinner fa-spin fa-fw" ng-if="email.procesando"></i> Enviar</button></p>
                 </form>
             </div>
         </div>

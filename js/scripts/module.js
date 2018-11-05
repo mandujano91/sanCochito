@@ -51,6 +51,8 @@
                     }
                 }).when("/contacto", {
                     templateUrl: "views/templates/contacto.html",
+                    controller: "emailController",
+                    controllerAs: "email",
                     resolve: {
                         "check": function($location, $rootScope) {
                             $rootScope.item = 4;

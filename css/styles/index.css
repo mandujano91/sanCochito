@@ -308,7 +308,7 @@ figure:hover+span {
 }
 
 .text-warning {
-    color: #E3BB30 !important;
+    color: #F3CB31 !important;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -409,4 +409,9 @@ body {
 
 .f-size-menu {
     font-size: 19px;
+}
+
+.invalido {
+    border: 1.5px solid #ff7e7e;
+    opacity: 0.8;
 }
