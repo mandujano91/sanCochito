@@ -19,38 +19,43 @@
 
 <body ng-controller="scroll">
 
-    <p class="text-center">
-        <a class="navbar-brand text-warning ml-2 mt-2" href="#/!">
-            <img src="images/logo.png" id="logo" class="d-inline-block align-top tam-logo" alt="">
-        </a>
+    <p class="text-center pt-3">
+
+        <img src="images/logo.png" id="logo" class="d-inline-block align-top tam-logo" alt="">
     </p>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-center" id="menu">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg bg-secondary text-center porter" id="menu">
 
 
-        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars fa-2x text-dark"></i>
-            </button>
-        <div class="collapse navbar-collapse" id="navegacion">
-            <ul class="navbar-nav ml-auto mr-auto text-center">
-                <li class="nav-items nav-font mr-3">
-                    <a href="#/!" class="hvr-grow" ng-class="['nav-link',{'active':item === 1}]">INICIO <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-items nav-font  mr-3">
-                    <a href="#!/menu" class="hvr-grow" ng-class="['nav-link',{'active':item === 2}]">EVENTOS <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-items nav-font  mr-3">
-                    <a href="#!/nosotros" class="hvr-grow" ng-class="['nav-link',{'active':item === 3}]">NOSOTROS <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-items nav-font mr-3">
-                    <a href="#!/contacto" class="hvr-grow" ng-class="['nav-link',{'active':item === 4}]">CONTACTO <span class="sr-only">(current)</span></a>
-                </li>
-
-            </ul>
+                    <button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars fa-2x text-dark"></i>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navegacion">
+                        <ul class="navbar-nav ml-auto mr-auto text-center">
+                            <li class="nav-items nav-font mr-3">
+                                <a href="#/!" class="hvr-grow" ng-class="['nav-link',{'active':item === 1}]">I N I C I O <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-items nav-font  mr-3">
+                                <a href="#!/menu" class="hvr-grow" ng-class="['nav-link',{'active':item === 2}]">E V E N T O S<span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- <li class="nav-items nav-font  mr-3">
+                                <a href="#!/nosotros" class="hvr-grow" ng-class="['nav-link',{'active':item === 3}]">N O S O T R O S <spasn class="sr-only">(current)</span></a>
+                            </li> -->
+                            <li class="nav-items nav-font mr-3">
+                                <a href="#!/contacto" class="hvr-grow" ng-class="['nav-link',{'active':item === 4}]">C O N T A C T O<span class="sr-only">(current)</span></a>
+                            </li>
+            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </div>
     <div class="container-fluid bg-secondary animated slideInLeft">
-        <p class="bg-secondary h3 eslogan text-center text-dark py-4">Nuestro eslogan</p>
+        <p class="bg-secondary h3 eslogan text-center text-dark py-4 pl-0">¡Hacemos de tu evento una experiencia unica!</p>
     </div>
     <!-- ------------------- -->
 
@@ -67,8 +72,8 @@
             <div>
                 <div class="row justify-content-center align-items-center tam">
                     <div class="col-sm-10 col-md-11 col-lg-9">
-                        <p class="text-warning text-center title-footer d-none d-lg-block">¡HAZ TU PEDIDO!</p>
-                        <p class="text-warning text-center title-footer-sm d-lg-none d-block">¡HAZ TU PEDIDO!</p>
+                        <p class="text-warning text-center title-footer d-none d-lg-block">¡HAZ TU PEDIDO YA!</p>
+                        <p class="text-warning text-center title-footer-sm d-lg-none d-block">¡HAZ TU PEDIDO YA!</p>
                         <p class="text-dark text-center h1 pb-2 ">Comunicate con nosotros al: </p>
                         <p class="text-dark text-center h3"><strong> <i class="fas fa-phone text-dark"></i> 33 21 25 36</strong></p>
                         <p class="text-dark text-center h3"><strong> <i class="fas fa-phone text-dark"></i> 33 21 25 36</strong></p>

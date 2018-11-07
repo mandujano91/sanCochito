@@ -1,9 +1,12 @@
 @font-face {
     font-family: fuente;
-    src: url(../../fonts/Kodchasan/Kodchasan-Regular.ttf);
+    src: url(../../fonts/porter/PORTER__.TTF);
 }
 
-* {
+.porter{
+    font-family: fuente;
+}
+body {
     font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     padding: 0;
     margin: 0;
@@ -73,7 +76,7 @@ body {
 }
 
 .opacidad-imagen-menu {
-    background-color: rgba(124, 124, 124, 0.5)
+    background-color: rgba(44, 44, 44, 0.5)
 }
 
 .contenedor {
@@ -109,11 +112,12 @@ body {
 }
 
 .footer {
-    background: url(../../images/footer.jpg);
+    /* background: url(../../images/footer.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 6%;
+    background-position-y: 6%; */
+    background-color: rgb(5, 138, 187);
 }
 
 .eventos {
@@ -414,4 +418,16 @@ body {
 .invalido {
     border: 1.5px solid #ff7e7e;
     opacity: 0.8;
+}
+
+.swal-overlay {
+    background-color: rgba(50, 168, 168, 0.45);
+}
+
+.swal-modal {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-backdrop {
+    background-color: rgba(50, 168, 168, 0.45);
 }

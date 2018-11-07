@@ -36,20 +36,22 @@
                             // $("#menu").addClass("sombra");
                         }
                     }
-                }).when("/nosotros", {
-                    templateUrl: "views/templates/nosotros.html",
-                    resolve: {
-                        "check": function($location, $rootScope) {
-                            $rootScope.item = 3;
-                            if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
-                                $(".navbar-toggler").click();
-                            }
-                            $(window).scrollTop(0);
-                            // $("#menu").addClass("bg-dark");
-                            // $("#menu").addClass("sombra");
-                        }
-                    }
-                }).when("/contacto", {
+                })
+                // .when("/nosotros", {
+                //     templateUrl: "views/templates/nosotros.html",
+                //     resolve: {
+                //         "check": function($location, $rootScope) {
+                //             $rootScope.item = 3;
+                //             if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
+                //                 $(".navbar-toggler").click();
+                //             }
+                //             $(window).scrollTop(0);
+                //             // $("#menu").addClass("bg-dark");
+                //             // $("#menu").addClass("sombra");
+                //         }
+                //     }
+                // })
+                .when("/contacto", {
                     templateUrl: "views/templates/contacto.html",
                     controller: "emailController",
                     controllerAs: "email",
