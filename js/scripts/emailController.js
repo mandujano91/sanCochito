@@ -22,14 +22,14 @@
                             "<p style='color:black'> Mensaje: " + vm.mensaje + "</p>" +
                             "</body>" +
                             "</html>"
-
                     }
                     vm.procesando = true;
                     emailService.enviarCorreo(data)
                         .then(function(response) {
+
                             vm.procesando = false;
-                            if (response.data.ok) {
-                                swal(response.data.message, "", "success");
+                            if (response.data[0].estatus) {
+                                swal(response.data[0].message, "", "success");
                                 vm.asunto = "";
                                 vm.telefono = "";
                                 vm.nombre = "";
@@ -37,11 +37,11 @@
                                 vm.mensaje = "";
                                 $scope.formulario_correo.$submitted = false;
                             } else {
-                                swal(response.data.message, "", "error");
+                                swal(response.data[0].message, "", "error");
                             }
                         }).catch(function(response) {
                             vm.procesando = false;
-                            alert(response.data.err)
+                            swal(response.data[0].message, "", "error");
                         });
 
                 }

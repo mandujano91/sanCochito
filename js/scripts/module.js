@@ -56,12 +56,12 @@
                     controller: "emailController",
                     controllerAs: "email",
                     resolve: {
-                        "check": function($location, $rootScope) {
+                        "check": function($location, $rootScope,$timeout) {
                             $rootScope.item = 4;
+                            $(window).scrollTop(0);
                             if ($("#navegacion").is(":visible") && $(".navbar-toggler").is(":visible")) {
                                 $(".navbar-toggler").click();
                             }
-                            $(window).scrollTop(0);
                             // $("#menu").addClass("bg-dark");
                             // $("#menu").addClass("sombra");
                         }

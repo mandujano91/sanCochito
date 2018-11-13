@@ -29,7 +29,6 @@
                         <label for="mensaje"><span class="text-danger">*</span> Mensaje</label>
                         <textarea class="form-control" id="mensaje" ng-class="{'invalido': formulario_correo.$submitted && !email.mensaje}" rows="3" ng-model="email.mensaje" ng-required="true" ng-disabled="email.procesando" autocomplete="off"></textarea>
                     </div>
-
                     <p class="text-right"><button type="submit" class="btn btn-primary" ng-disabled="email.procesando"><i class="fas fa-share-square" ng-if="!email.procesando"></i> <i class="fa fa-spinner fa-spin fa-fw" ng-if="email.procesando"></i> Enviar</button></p>
                 </form>
             </div>
