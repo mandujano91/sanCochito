@@ -27,23 +27,21 @@
                     vm.procesando = true;
                     emailService.enviarCorreo(data)
                         .then(function(response) {
-                            console.log(response.data);
-                            // vm.procesando = false;
-                            // if (response.data.ok) {
-                            //     swal(response.data, "", "success");
-                            //     vm.asunto = "";
-                            //     vm.telefono = "";
-                            //     vm.nombre = "";
-                            //     vm.correo = "";
-                            //     vm.mensaje = "";
-                            //     $scope.formulario_correo.$submitted = false;
-                            // } else {
-                            //     swal(response.data, "", "error");
-                            // }
+                            vm.procesando = false;
+                            if (response.data.ok) {
+                                swal(response.data.message, "", "success");
+                                vm.asunto = "";
+                                vm.telefono = "";
+                                vm.nombre = "";
+                                vm.correo = "";
+                                vm.mensaje = "";
+                                $scope.formulario_correo.$submitted = false;
+                            } else {
+                                swal(response.data.message, "", "error");
+                            }
                         }).catch(function(response) {
-                            // vm.procesando = false;
-                            // alert(response.data.err)
-                            console.log(response.data);
+                            vm.procesando = false;
+                            alert(response.data.err)
                         });
 
                 }
