@@ -7,13 +7,20 @@
             let vm = this;
 
             vm.enviarCorreo = function(data) {
-                return $http({
-                    method: 'POST',
-                    url: "server/server.php?email=enviar",
-                    data: JSON.stringify(data),
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+                    console.log(data)
+                // return $http({
+                //     method: 'POST',
+                //     url: "http://localhost:3000/enviarCorreo",
+                //     data: {
+                //         "mensaje":"hola"
+                //     },
+                //     headers: {
+                //         'Content-Type': 'application/json'
+                //     }
 
-                });
+                // });
+
+                return $http.get("https://mail-san-cochito.herokuapp.com/prueba");
             }
 
         });
