@@ -28,8 +28,8 @@
                         .then(function(response) {
 
                             vm.procesando = false;
-                            if (response.data[0].estatus) {
-                                swal(response.data[0].message, "", "success");
+                            if (response.data.ok) {
+                                swal(response.data.message, "", "success");
                                 vm.asunto = "";
                                 vm.telefono = "";
                                 vm.nombre = "";
@@ -37,11 +37,11 @@
                                 vm.mensaje = "";
                                 $scope.formulario_correo.$submitted = false;
                             } else {
-                                swal(response.data[0].message, "", "error");
+                                swal(response.data.err, "", "error");
                             }
                         }).catch(function(response) {
                             vm.procesando = false;
-                            swal(response.data[0].message, "", "error");
+                            swal(response.data.err, "", "error");
                         });
 
                 }
