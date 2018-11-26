@@ -16,8 +16,9 @@
                 $("body").css("overflow-y", "auto");
             })
 
-            vm.muestraImagen = (e) => {
-                vm.imagen = e.target.currentSrc;
+            vm.muestraImagen = (e,image) => {
+                e.preventDefault();
+                vm.imagen = image;
                 $("body").css("overflow-y", "hidden");
             }
 
